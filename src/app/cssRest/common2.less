@@ -1,0 +1,116 @@
+//@import url("lesshat.less");
+
+@back: rgba(128, 128, 128, 0.2);
+@front: #000000;
+
+//________________________________________________________________________________________________
+.kolom {
+  display: flex;
+  color: @front;
+  background-color: @back;
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+
+@width1: calc(96w - 12em);
+@width2: calc(48vw - 10em);
+@width3: 30vw;
+@width4: 22vw;
+
+.wijd1 {
+  width: @width1;
+  img {
+    max-width: @width1;
+    height: auto;
+  }
+}
+.wijd2 {
+  width: @width2;
+  img {
+    max-width: @width2;
+    height: auto;
+  }
+}
+.wijd3 {
+  width: @width3;
+  img {
+    max-width: @width3;
+    height: auto;
+  }
+}
+.wijd4 {
+  width: @width4;
+  img {
+    max-width: @width4;
+    height: auto;
+  }
+}
+
+//________________________________________________________________________________________________
+
+#vrij {
+  height: 120px;
+}
+
+.kolom0 {
+  clear: both;
+  .wijd2;
+  .kolom;
+}
+
+.kolom1 {
+  clear: none;
+  .wijd2;
+  .kolom;
+}
+
+.kolom2 {
+  clear: both;
+  .wijd2;
+  .kolom;
+}
+
+.kolom3 {
+  clear: none;
+  .wijd2;
+  .kolom;
+}
+
+.kolom4 {
+  clear: both;
+  .wijd2;
+  .kolom;
+}
+
+.kolom5 {
+  clear: none;
+  .wijd2;
+  .kolom;
+}
+
+.kolom6 {
+  clear: both;
+  .wijd4;
+  .kolom;
+}
+
+.kolom7 {
+  clear: none;
+  .wijd4;
+  .kolom;
+}
+
+.kolom8 {
+  clear: none;
+  .wijd4;
+  .kolom;
+}
+
+.kolom9 {
+  clear: none;
+  .wijd4;
+  .kolom;
+}
+
+//________________________________________________________________________________________________

@@ -1,0 +1,1 @@
+{"pictname":"IMG_6813 - kopie (3).jpg","selected":"1","item":"14","title1":"Bowing for the Rain","title2":"ink on ricepaper, 2015","inhoud":""}

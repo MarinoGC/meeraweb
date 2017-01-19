@@ -1,0 +1,9 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  background-image: url('resources/achter.jpg');
+  background-repeat: repeat;
+  font-style: normal;
+  font-family: GillSans;
+  font-size: 24px;
+}

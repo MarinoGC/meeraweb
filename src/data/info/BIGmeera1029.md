@@ -1,0 +1,1 @@
+{"pictname":"BIGmeera1029.jpg","selected":"1","item":"21","title1":"","title2":"ink on ric-paper 30x24cm 2012","inhoud":""}

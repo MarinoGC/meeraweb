@@ -1,0 +1,1 @@
+{"pictname":"appelboom.jpg","selected":"1","item":"7","title1":"Magic tree","title2":"acrylic on hand-made paper, 150x107cm, 2015","inhoud":""}

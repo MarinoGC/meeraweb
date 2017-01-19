@@ -1,0 +1,85 @@
+<body class="HolyGrail">
+
+<header class="header"
+        (swipeleft)="swipe($event.type)"
+        (swiperight)="swipe($event.type)">
+    <div class="logo" (click)="onNavigate(items[0])">
+        <img src="./resources/header2.png">
+    </div>
+
+    <div *ngIf="large" class="posAbs">
+        <div  *ngFor="let item of items; let i=index">
+            <div    *ngIf="(i != pageNu)"
+                    class="nonKeuze"
+                    (click)="onNavigate(item)" >
+            </div>
+            <div    *ngIf="(i == pageNu)"
+                    class="keuze"
+                    (click)="onNavigate(item)" >
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<div class="taal" (click)="onLang()">
+    <div *ngIf="(versie == 0)"><img src="./resources/dutch.jpg"></div>
+    <div *ngIf="!(versie == 0)"><img src="./resources/UK.jpg"></div>
+</div>
+
+<div *ngIf="!large" class="handje">
+    <div *ngIf="!cross" class="mk" (click)="toggle()">
+        <img src="./resources/stripes.png" style="width:40px;height:40px" >
+    </div>
+    <div *ngIf="cross" class="mk" (click)="toggle()">
+        <img src="./resources/cross.png" style="width:40px;height:40px">
+    </div>
+    <div *ngIf="cross" class="small">
+        <div  *ngFor="let item of items; let i=index">
+            <div    *ngIf="(i != pageNu)"
+                    class="nonKeuze1"
+                    (click)="onNavigate(item)" >
+                {{item.data.name}}
+            </div>
+            <div    *ngIf="(i == pageNu)"
+                    class="keuze1"
+                    (click)="onNavigate(item)" >
+                {{item.data.name}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="HolyGrail-body">
+    <main class="HolyGrail-content">
+        <div *ngIf="dataSel[0]"><app-home></app-home></div>
+        <div *ngIf="dataSel[1]"><app-paintings></app-paintings></div>
+        <div *ngIf="dataSel[2]"><app-sculptures></app-sculptures></div>
+        <div *ngIf="dataSel[3]"><app-teachings></app-teachings></div>
+        <div *ngIf="dataSel[4]"><app-biography></app-biography></div>
+        <div *ngIf="dataSel[5]"><app-contact></app-contact></div>
+    </main>
+
+    <nav *ngIf="large" class="HolyGrail-nav">
+        <div  *ngFor="let item of items; let i=index">
+            <div    class="element1"
+                    id={{item.data.nav}}Small
+                    (click)="onNavigate(item)" >
+                <img src="../resources/menu{{i}}.png"/>
+            </div>
+        </div>
+    </nav>
+
+    <!--
+        <aside class="HolyGrail-ads">
+            TEST ADDS
+        </aside>
+    -->
+
+</div>
+
+<footer class="footer">
+    <h2>dit is de footer: {{breedte}} pixels breed</h2>
+</footer>
+
+</body>

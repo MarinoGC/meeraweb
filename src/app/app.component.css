@@ -1,0 +1,569 @@
+.navKlein {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.mk {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.small {
+  background-color: rgba(60, 60, 60, 0.6);
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  padding: 20px;
+  color: white;
+}
+.element1 {
+  clear: both;
+  float: left;
+  display: block;
+  height: 50px;
+  width: 150px;
+  padding: 5px;
+  margin: 8px;
+  font-size: 12px;
+}
+.element1 img {
+  width: 85%;
+}
+.element1 img:hover {
+  width: 100%;
+}
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+}
+.HolyGrail-content {
+  flex: 1;
+}
+/*
+.HolyGrail-ads {
+  flex: 0 0 8em;
+  background-color: #94b5c3;
+}
+*/
+.HolyGrail-nav {
+  /* put the nav on the left */
+  order: -1;
+  flex: 0 0 6em;
+  background-color: rgba(128, 128, 128, 0);
+  cursor: pointer;
+}
+header {
+  margin-left: 0px;
+  background-color: rgba(128, 128, 128, 0);
+  cursor: pointer;
+}
+footer {
+  background-color: #94b5c3;
+  text-align: center;
+}
+.logo {
+  cursor: pointer;
+  margin-left: 2em;
+}
+.logo img {
+  width: 60vw;
+  max-width: 420px;
+  height: auto;
+}
+.taal {
+  position: absolute;
+  top: 20px;
+  left: 0.5em;
+}
+.taal img {
+  width: 1.5em;
+  height: auto;
+}
+@media only screen and (min-width: 962px) {
+  #vrij {
+    height: 120px;
+  }
+  .logo {
+    cursor: pointer;
+    margin-left: 6em;
+  }
+  .logo img {
+    height: auto;
+  }
+  .taal {
+    position: absolute;
+    top: 20px;
+    left: 90vw;
+  }
+  .taal img {
+    width: 2em;
+    height: auto;
+  }
+}
+.kolom {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+.wijd1 {
+  width: 97%;
+}
+.wijd1 img {
+  max-width: 100%;
+  height: auto;
+}
+.wijd2 {
+  width: 47%;
+}
+.wijd2 img {
+  max-width: 100%;
+  height: auto;
+}
+.wijd3 {
+  width: 32%;
+}
+.wijd3 img {
+  max-width: 100%;
+  height: auto;
+}
+.wijd4 {
+  width: 22.3%;
+}
+.wijd4 img {
+  max-width: 100%;
+  height: auto;
+}
+.leeg {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  float: left;
+  margin: 1px;
+}
+.leeg1 {
+  width: calc(99%);
+}
+.leeg2 {
+  width: calc(49%);
+}
+.leeg3 {
+  width: calc(34%);
+}
+.leeg4 {
+  width: calc(24.3%);
+}
+#vrij {
+  height: 120px;
+}
+.kolom0 {
+  clear: both;
+  width: 97%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+.kolom0 img {
+  max-width: 100%;
+  height: auto;
+}
+.box0 {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  float: left;
+  margin: 1px;
+  width: calc(99%);
+}
+.kolom1 {
+  clear: both;
+  width: 97%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+.kolom1 img {
+  max-width: 100%;
+  height: auto;
+}
+.box1 {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  float: left;
+  margin: 1px;
+  width: calc(99%);
+}
+.kolom2 {
+  clear: both;
+  width: 97%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+.kolom2 img {
+  max-width: 100%;
+  height: auto;
+}
+.box2 {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  float: left;
+  margin: 1px;
+  width: calc(99%);
+}
+.kolom3 {
+  clear: both;
+  width: 97%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+.kolom3 img {
+  max-width: 100%;
+  height: auto;
+}
+.box3 {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  float: left;
+  margin: 1px;
+  width: calc(99%);
+}
+.kolom4 {
+  clear: both;
+  width: 97%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+.kolom4 img {
+  max-width: 100%;
+  height: auto;
+}
+.box4 {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  float: left;
+  margin: 1px;
+  width: calc(99%);
+}
+.kolom5 {
+  clear: both;
+  width: 97%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+.kolom5 img {
+  max-width: 100%;
+  height: auto;
+}
+.box5 {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  float: left;
+  margin: 1px;
+  width: calc(99%);
+}
+.kolom6 {
+  clear: both;
+  width: 47%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+.kolom6 img {
+  max-width: 100%;
+  height: auto;
+}
+.box6 {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  float: left;
+  margin: 1px;
+  width: calc(49%);
+}
+.kolom7 {
+  clear: none;
+  width: 47%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+.kolom7 img {
+  max-width: 100%;
+  height: auto;
+}
+.box7 {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  float: left;
+  margin: 1px;
+  width: calc(49%);
+}
+.kolom8 {
+  clear: both;
+  width: 47%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+.kolom8 img {
+  max-width: 100%;
+  height: auto;
+}
+.box8 {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  float: left;
+  margin: 1px;
+  width: calc(49%);
+}
+.kolom9 {
+  clear: none;
+  width: 47%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 1%;
+  float: left;
+  margin: 1px;
+}
+.kolom9 img {
+  max-width: 100%;
+  height: auto;
+}
+.box9 {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0);
+  float: left;
+  margin: 1px;
+  width: calc(49%);
+}
+@media only screen and (min-width: 962px) {
+  #vrij {
+    height: 120px;
+  }
+  .kolom0 {
+    clear: both;
+    width: 97%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 1%;
+    float: left;
+    margin: 1px;
+  }
+  .kolom0 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .box0 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    float: left;
+    margin: 1px;
+    width: calc(99%);
+  }
+  .kolom1 {
+    clear: both;
+    width: 47%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 1%;
+    float: left;
+    margin: 1px;
+  }
+  .kolom1 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .box1 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    float: left;
+    margin: 1px;
+    width: calc(49%);
+  }
+  .kolom2 {
+    clear: none;
+    width: 47%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 1%;
+    float: left;
+    margin: 1px;
+  }
+  .kolom2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .box2 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    float: left;
+    margin: 1px;
+    width: calc(49%);
+  }
+  .kolom3 {
+    clear: both;
+    width: 47%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 1%;
+    float: left;
+    margin: 1px;
+  }
+  .kolom3 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .box3 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    float: left;
+    margin: 1px;
+    width: calc(49%);
+  }
+  .kolom4 {
+    clear: none;
+    width: 47%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 1%;
+    float: left;
+    margin: 1px;
+  }
+  .kolom4 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .box4 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    float: left;
+    margin: 1px;
+    width: calc(49%);
+  }
+  .kolom5 {
+    clear: both;
+    width: 97%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 1%;
+    float: left;
+    margin: 1px;
+  }
+  .kolom5 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .box5 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    float: left;
+    margin: 1px;
+    width: calc(99%);
+  }
+  .kolom6 {
+    clear: both;
+    width: 22.3%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 1%;
+    float: left;
+    margin: 1px;
+  }
+  .kolom6 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .box6 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    float: left;
+    margin: 1px;
+    width: calc(24.3%);
+  }
+  .kolom7 {
+    clear: none;
+    width: 22.3%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 1%;
+    float: left;
+    margin: 1px;
+  }
+  .kolom7 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .box7 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    float: left;
+    margin: 1px;
+    width: calc(24.3%);
+  }
+  .kolom8 {
+    clear: none;
+    width: 22.3%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 1%;
+    float: left;
+    margin: 1px;
+  }
+  .kolom8 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .box8 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    float: left;
+    margin: 1px;
+    width: calc(24.3%);
+  }
+  .kolom9 {
+    clear: none;
+    width: 22.3%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 1%;
+    float: left;
+    margin: 1px;
+  }
+  .kolom9 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .box9 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    float: left;
+    margin: 1px;
+    width: calc(24.3%);
+  }
+}

@@ -1,0 +1,16 @@
+.element1 {
+  clear: both;
+  float: left;
+  display: block;
+  height: 50px;
+  width: 150px;
+  padding: 5px;
+  margin: 8px;
+  font-size: 12px;
+}
+.element1 img {
+  width: 85%;
+}
+.element1 img:hover {
+  width: 100%;
+}

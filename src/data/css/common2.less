@@ -1,0 +1,416 @@
+@import url("../css/lesshat.less");
+//@import url("../css/GillSansBold/stylesheet.css");
+//@import url("../css/GillSansLight/stylesheet.css");
+@import url("../css/GillSans/stylesheet.css");
+
+
+@back: rgba(128, 128, 128, 0.0);
+@front: #000000;
+@colorHeader: #ffffff;
+@colorNav: #efefef;
+@colorFooter: #94b5c3;
+@color2: green;
+@color3: green;
+
+body
+{
+  background-color: #ffffff;
+  color: @front;
+  font-style: normal;
+  font-family: GillSans;
+  font-size: 24px;
+}
+//__________________________________________________________________
+.navKlein {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.mk {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.small {
+  background-color: rgba(60, 60, 60, 0.60);
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  padding: 20px;
+  color: white;
+}
+//__________________________________________________________________
+
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+}
+.HolyGrail-content {
+  flex: 1;
+}
+
+/*
+.HolyGrail-ads {
+  flex: 0 0 8em;
+  background-color: #94b5c3;
+}
+*/
+
+.HolyGrail-nav {
+  /* put the nav on the left */
+  order: -1;
+  flex: 0 0 6em;
+  background-color: @back;
+  cursor: pointer;
+}
+header {
+  margin-left: 0px;
+  background-color: @back;
+  cursor: pointer;
+}
+footer {
+  background-color: @colorFooter;
+  text-align: center;
+}
+
+@width1: 97%;
+@width2: 47%;
+@width3: 32%;
+@width4: 22.3%;
+@padd: 1%;
+
+.kolom {
+  display: flex;
+  background-color: @back;
+  padding: @padd;
+  float: left;
+  margin: 1px;
+//  outline: 1px solid orange;
+}
+
+.wijd1 {
+  width: @width1;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.wijd2 {
+  width: @width2;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.wijd3 {
+  width: @width3;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.wijd4 {
+  width: @width4;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+//_____________________________________________________
+.leeg {
+  display: flex;
+  background-color: @back;
+  float: left;
+  margin: 1px;
+//  outline: 1px solid blue;
+}
+.leeg1 {
+  width: calc(@width1 + 2*@padd);
+}
+
+.leeg2 {
+  width: calc(@width2 + 2*@padd);
+}
+
+.leeg3 {
+  width: calc(@width3 + 2*@padd);
+}
+
+.leeg4 {
+  width: calc(@width4 + 2*@padd);
+}
+
+//______________________________________________tot 962px
+.logo {
+  cursor: pointer;
+  margin-left: 2em;
+  img {
+    width: 60vw;
+    max-width: 420px;
+    height: auto;
+  }
+}
+
+.taal {
+  position: absolute;
+  top: 20px;
+  left: 0.5em;
+  img {
+    width: 1.5em;
+    height: auto;
+  }
+}
+
+#vrij {
+  height: 120px;
+}
+
+.kolom0 {
+  clear: both;
+  .wijd1;
+  .kolom;
+}
+
+.box0 {
+  .leeg;
+  .leeg1;
+}
+
+.kolom1 {
+  clear: both;
+  .wijd1;
+  .kolom;
+}
+
+.box1 {
+  .leeg;
+  .leeg1;
+}
+
+.kolom2 {
+  clear: both;
+  .wijd1;
+  .kolom;
+}
+.box2 {
+  .leeg;
+  .leeg1;
+}
+
+.kolom3 {
+  clear: both;
+  .wijd1;
+  .kolom;
+}
+
+.box3 {
+  .leeg;
+  .leeg1;
+}
+
+.kolom4 {
+  clear: both;
+  .wijd1;
+  .kolom;
+}
+
+.box4 {
+  .leeg;
+  .leeg1;
+}
+
+.kolom5 {
+  clear: both;
+  .wijd1;
+  .kolom;
+}
+
+.box5 {
+  .leeg;
+  .leeg1;
+}
+
+.kolom6 {
+  clear: both;
+  .wijd2;
+  .kolom;
+}
+
+.box6 {
+  .leeg;
+  .leeg2;
+}
+
+.kolom7 {
+  clear: none;
+  .wijd2;
+  .kolom;
+}
+
+.box7 {
+  .leeg;
+  .leeg2;
+}
+
+.kolom8 {
+  clear: both;
+  .wijd2;
+  .kolom;
+}
+
+.box8 {
+  .leeg;
+  .leeg2;
+}
+
+.kolom9 {
+  clear: none;
+  .wijd2;
+  .kolom;
+}
+.box9 {
+  .leeg;
+  .leeg2;
+}
+
+//______________________________________________> 962px
+@media only screen and (min-width: 962px) {
+  #vrij {
+    height: 120px;
+  }
+
+  .logo {
+    cursor: pointer;
+    margin-left: 6em;
+    img {
+      height: auto;
+    }
+  }
+
+  .taal {
+    position: absolute;
+    top: 20px;
+    left: 90vw;
+    img {
+      width: 2em;
+      height: auto;
+    }
+  }
+
+  .kolom0 {
+    clear: both;
+    .wijd1;
+    .kolom;
+  }
+
+  .box0 {
+    .leeg;
+    .leeg1;
+  }
+
+  .kolom1 {
+    clear: both;
+    .wijd2;
+    .kolom;
+  }
+
+  .box1 {
+    .leeg;
+    .leeg2;
+  }
+
+  .kolom2 {
+    clear: none;
+    .wijd2;
+    .kolom;
+  }
+  .box2 {
+    .leeg;
+    .leeg2;
+  }
+
+  .kolom3 {
+    clear: both;
+    .wijd2;
+    .kolom;
+  }
+
+  .box3 {
+    .leeg;
+    .leeg2;
+  }
+
+  .kolom4 {
+    clear: none;
+    .wijd2;
+    .kolom;
+  }
+
+  .box4 {
+    .leeg;
+    .leeg2;
+  }
+
+  .kolom5 {
+    clear: both;
+    .wijd1;
+    .kolom;
+  }
+
+  .box5 {
+    .leeg;
+    .leeg1;
+  }
+
+  .kolom6 {
+    clear: both;
+    .wijd4;
+    .kolom;
+  }
+
+  .box6 {
+    .leeg;
+    .leeg4;
+  }
+
+  .kolom7 {
+    clear: none;
+    .wijd4;
+    .kolom;
+  }
+
+  .box7 {
+    .leeg;
+    .leeg4;
+  }
+
+  .kolom8 {
+    clear: none;
+    .wijd4;
+    .kolom;
+  }
+
+  .box8 {
+    .leeg;
+    .leeg4;
+  }
+
+  .kolom9 {
+    clear: none;
+    .wijd4;
+    .kolom;
+  }
+  .box9 {
+    .leeg;
+    .leeg4;
+  }
+}
+//________________________________________________________________________________________________
